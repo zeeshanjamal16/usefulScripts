@@ -15,6 +15,7 @@ processesCpuWise=$(ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head)
 
 if (( ${currentCpuLoad%%.*} > ${cpuThreshold%%.*} || ( ${currentCpuLoad%%.*} == ${cpuThreshold%%.*} && ${currentCpuLoad##*.} > ${cpuThreshold##*.} ) )) ; then    
         echo "Server under high load. Logging resources for processes .."
+	mkdir -p $logDirectoryPath
 	touch $memoryLogFile
 	touch $cpuLogFile
 

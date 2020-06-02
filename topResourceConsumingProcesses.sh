@@ -20,13 +20,13 @@ if (( ${currentCpuLoad%%.*} > ${cpuThreshold%%.*} || ( ${currentCpuLoad%%.*} == 
 	touch $cpuLogFile
 
 	echo "------------------" >> $memoryLogFile
-	echo $date >> $memoryLogFile
-	echo $processesMemoryWise >> $memoryLogFile
+	echo "$date" >> $memoryLogFile
+	echo "$processesMemoryWise" >> $memoryLogFile
 	echo "------------------" >> $memoryLogFile
 	
 	echo "------------------" >> $cpuLogFile
-        echo $date >> $cpuLogFile
-	echo $processesCpuWise >> $cpuLogFile
+        echo "$date" >> $cpuLogFile
+	echo "$processesCpuWise" >> $cpuLogFile
 	echo "------------------" >> $cpuLogFile
         
 fi

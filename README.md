@@ -12,7 +12,7 @@
 
 ### sslCertificateExpireCheck.sh 
 
-**What it do** - A bash script which check in how many days certificate will expire. It take input as certificate path and number of days for which you want to check. 
+**What it do** - A bash script which check in how many days certificate will expire. It take input as certificate path and number of days for which you want to check.   
 **How to use** - Replace the following values according to your requirement in the script
 
 - CERTIFICATE_LOCATION

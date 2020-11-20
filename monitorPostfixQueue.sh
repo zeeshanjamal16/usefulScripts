@@ -9,7 +9,7 @@ alertEmail="EMAIL_TO_ALERT"
 
 if [ "$queuecount" == "" ]; then
 	echo "No mail queue";
-elif [ "$queuecount" -gt "$queueThreshold" ]
+elif [ "$queuecount" -gt "$queueThreshold" ]; then
         echo "$queuelength is above threshold";
 	echo "Email threshold exceeded with queue $queuelength on $HOSTNAME" | mail -s "Email threshold exceeded" $alertEmail
 else

@@ -24,3 +24,11 @@
 You can use this line multiple times to get alerts for multiple domains.
 
 
+### monitorPostfixQueue.sh    
+
+**What it do** - A bash script to check if postfix email queue crossed a certain threshold and certain action can be taken accordingly.   
+** How to use** - Replace queueThreshold with your desired queue limit to monitor and run this script with a cron. Replace emailAlert value with your email.      
+
+
+   
+
